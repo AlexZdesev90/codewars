@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="minin16.js" defer></script>
+    <link rel="stylesheet" href="s.css">
+    <script src="test.js" defer></script>
+    <script src="137.js" defer></script>
 </head>
 <body>
-    
+    <!-- <div id="test"> id="ok"</div> -->
+    <div id="parent">
+        <div id="child">
+        </div>
+    </div>
+
+    <div onclick="console.log('first div')">
+        <div onclick="console.log('second div')">
+            <button onclick="console.log('button')">
+                Кликни!
+            </button>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 5px">b1</div>
+    <div style="margin-top: 10px">b2</div>
 </body>
 </html>
