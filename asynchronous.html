@@ -11,24 +11,66 @@
     <script src="regexp.js" defer></script> -->
     <!-- <script src="1.js" defer></script>
     <script src="git.js" defer></script> -->
-    <script src="file.js" defer></script>
+     <!-- <script src="file.js" defer></script> -->
+    <!--<script src="bom.js" defer></script> -->
+    <script src="dom.js" defer></script>
+    <style>
+        #blueRect{
+            width:100px;
+            height:100px;
+            background-color:blue;
+        }
+        #redRect{
+            width:50px;
+            height:50px;
+            background-color:red;
+        }
+        </style>
 </head>
 <body>
-    <!-- <div id="test"> id="ok"</div> -->
-    <div id="parent">
-        <div id="child">
-        </div>
+
+    <div id="blueRect">
+        <div id="redRect"></div>
     </div>
 
-    <div onclick="console.log('first div')">
-        <div onclick="console.log('second div')">
-            <button onclick="console.log('button')">
-                Кликни!
-            </button>
-        </div>
-    </div>
+    <script>
+        // var redRect = document.getElementById("redRect");
+        // redRect.addEventListener("click", function(e){
+        //     console.log("Событие на redRect");
+            
+        // });
 
-    <div style="margin-bottom: 5px">b1</div>
-    <div style="margin-top: 10px">b2</div>
+        // var blueRect = document.getElementById("blueRect");
+        // blueRect.addEventListener("click", function(e){
+        //     console.log("Событие на blueRect");
+        //     // e.stopPropagation()
+        // });
+
+        // document.body.addEventListener("click", function(){
+        //     console.log("Событие на body");
+        // }, false);
+        //Событие на redRect
+        //Событие на blueRect
+        //Событие на body
+
+
+        //true
+        //Событие на body
+        //Событие на blueRect
+        //Событие на redRect
+        </script>
+
+<div class="circle">+</div>
+
+<div class="container">
+    <div class="el">1</div>
+    <div class="el">2</div>
+    <div class="el">3</div>
+    <div class="el">4</div>
+    <div class="el">5</div>
+</div>
+
+
+
 </body>
 </html>
